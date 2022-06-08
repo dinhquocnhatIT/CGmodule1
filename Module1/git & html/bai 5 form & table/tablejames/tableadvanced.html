@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Advanced</title>
+    <style>
+        table { 
+            width: 100%;
+        }
+       /* table, th, td {
+           border-collapse: collapse;
+           border: 1px solid #dddddd;
+       } */
+       table > caption {
+           text-align: left;
+           margin-bottom: 10px;
+           font-size: 20px;
+       }
+      
+       tbody {
+           pad: 50px;
+
+       }
+       td, th {
+           padding: 20px;
+       }
+       th {
+           font-family: cursive;
+           font-size: 16px;
+           font-weight: 400;
+           text-align: center;
+           padding: 20px;
+           background-color: #d61b06;
+       } 
+       td{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    color:#5f6062;
+    font-size:13px;
+    padding:20px 20px 20px 20px;
+    border-bottom:1px solid #e0e0e0;
+    text-align: center;
+}
+
+.hover {
+    background: red;
+}
+    
+       
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Thời Khóa Biểu</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Thứ</th>
+                <th colspan="2">Hoạt động</th>
+                
+            </tr>
+            <tr>
+                <th>Sáng</th>
+                <th>Chiều</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Thứ hai</td>
+                <td>Thể dục</td>
+                <td>HD Trò chơi mới</td>
+            </tr>
+            <tr>
+                <td>Thứ 3</td>
+                <td>Nhận biết tập nói</td>
+                <td>Rèn nề nếp kỹ năng sống</td>
+            </tr>
+            <tr>
+                <td>Thứ 4</td>
+                <td>Âm nhạc</td>
+                <td>Vui chơi</td>
+            </tr>
+            <tr>
+                <td>Thứ 5</td>
+                <td>văn học</td>
+                <td>Nhận biết các giá trị sống</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
