@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .bg-caption {
+            background-color: yellow;
+            height: 36px;
+            text-transform: uppercase;
+            
+        }
+        table {
+            width: 70%;
+            text-align: center;
+           
+            
+        }
+        thead {
+            background-color:#FFC0CB ;
+        }
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+
+        }
+        .bg-body {
+            background-color: #98FB98;
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <caption class="bg-caption" >Danh sách điểm thi lớp C0522k1</caption>
+        <thead>
+            <tr>
+               <th rowspan="2" >STT</th>
+               <th colspan="2" rowspan="2" >Họ và tên </th>
+               <th rowspan="2" >Ngày sinh</th>
+               <th colspan="3">Điểm thi </th>
+               <th rowspan="2"">ĐTB</th>
+            </tr>
+            <tr>
+                <th>Toán </th>
+                <th >Lý</th>
+                <th >Hóa</th>
+            </tr>
+        </thead>
+        <tbody class="bg-body">
+            <tr>
+                <td>1</td>
+                <td>Nguyễn</td>
+                <td>Trúc</td>
+                <td>10/10/2000</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn</td>
+                <td>Trúc</td>
+                <td>10/10/2000</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nguyễn</td>
+                <td>Trúc</td>
+                <td>10/10/2000</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Nguyễn</td>
+                <td>Trúc</td>
+                <td>10/10/2000</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Nguyễn</td>
+                <td>Trúc</td>
+                <td>10/10/2000</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>6</td>
+            </tr>
+           
+            
+        </tbody>
+        <tfoot >
+            <tr>
+                <th colspan="4" bgcolor="#B0E0E6">Trung Bình</th>
+                <th bgcolor="#B0E0E6">6</th>
+                <th bgcolor="#B0E0E6">7</th>
+                <th bgcolor="#B0E0E6">8</th>
+                <th bgcolor="#B0E0E6">6</th>
+               
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

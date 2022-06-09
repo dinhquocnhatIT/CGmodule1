@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:'Nunito', sans-serif;
+            
+        }
+        #main {
+            width: 700px;
+            height: 600px;
+            /* background-color: aqua; */
+            border: 1px solid #dddddd;
+            margin-left: 10%;
+            display: flex;
+            position: relative;
+            
+            
+        }
+        .header {
+            display: flex; 
+            width: 700px;
+            position: relative;
+            background-color: antiquewhite;
+            height: 50px;
+            position: absolute;
+            
+            
+        }
+        .text1 {
+            padding-top: 15px;
+            font-size: large;
+            margin-left: 15px;
+            font-weight: bolder;
+        }
+        .update {
+            position: absolute; 
+            right: 7px;
+            font-size: 70%;
+            color: #69986d;
+            float: right;
+            padding-top: 24px;
+
+        }
+        .body {
+            margin-top: 40px;
+            position: absolute;
+        }
+        table, td{
+            padding: 15px;
+        }
+        input, select {
+            background-color: #b1cfb3;
+            padding: 6px 32px;
+            border: 1px solid #dddddd
+        }
+        input:focus {
+            width: 200px;
+            transform: scale(.95);
+            transition: .2s;
+        }
+        span {
+            font-size: small;
+            display: flex;
+            margin-top: 15px;
+            color: #dddddd;
+             
+        }
+       .footer {
+           position: absolute;
+           bottom: 7px;
+           margin-left: 40%;
+           
+       }
+       .sunmit {
+           border: 2px solid #8fb4a3;
+           font-weight: bolder;
+           cursor: pointer;
+           height: 50px;
+           border-radius: 12px;
+           font-size: large;
+           color: #524b43;
+           
+       }
+       .sunmit:hover {
+           transform: scale(.95);
+           transition: 0.5s;
+       }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <p class="text1">Account Settings</p>
+            <p class="update">update your personal information</p>
+        </div>
+        <div class="body">
+            <table class="table">
+                <tr>
+                    <td class="name">Emailaddress</td>
+                    <td><input type="email" placeholder="Enter your email address" ></td>
+                </tr>
+                <tr>
+                    <td>Company</td>
+                    <td>
+                        <select name="company" id="company">
+                            <option value="yourcompany">Apple Office</option>
+                            <option value="yourcompany">Samsung Office</option>
+                            <option value="yourcompany">Maclife Office</option>
+                        </select> 
+                        <span>Select the Comapany that you would like to set as your Primary Company</span>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" placeholder="Quoc"></td>
+                   
+                </tr>
+                
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" placeholder="Nhat"></td>
+                </tr>
+                <tr>
+                    <td>Timezone</td>
+                    <td> <select name="timezone" id="timezone">
+                        <option value="timezone">Los Angeles</option>
+                        <option value="timezone">New York</option>
+                        <option value="timezone">California</option>
+                    </select></td>
+                </tr>
+                <tr>
+                   
+                    <td>Password</td>
+                    <td><input type="password" required></td>
+                </tr>
+                <tr>
+                    <td>Repeat Password</td>
+                    <td><input type="password" required></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+           
+            <input class="sunmit" type="submit" value="Save Changes">
+        </div>
+    </div>
+</body>
+</html>
