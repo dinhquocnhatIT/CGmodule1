@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chuyen doi tien te</title>
+    <style>
+        span {
+            display: flex;
+            margin-bottom: 10px;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
         <span>Amount</span> <br>
-        <input type="number" id="amount">
+        <input type="text" id="amount">
         <span> From Currency</span>
-        <select name="currency" id="from_currency">
+        <select name="" id="from_currency">
             <option value="VND">Vietnam</option>
             <option value="USD">USD</option>
         </select>
         <span> To Currency</span>
-        <select name="currency" id="to_currency">
-            <option value="VND">USD</option>
-            <option value="USD">Vietnam</option>
+        <select name="" id="to_currency">
+            <option value="VND">Vietnam</option>
+            <option value="USD">USD</option>
         </select>
-        <button onclick="convertCurrency ()">Convert</button>
+        <button onclick="convertCurrency()">Convert</button>
         <p id="result"></p>
-    </form>
     <script src="main.js"></script>
 </body>
 </html>
