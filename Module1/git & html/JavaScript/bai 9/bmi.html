@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index</title>
+</head>
+<body>
+    <h1>Body Mass Index</h1>
+    <form>
+        <label for="height">Input Height</label>
+        <input type="number" id="height"><br> <br>
+        <label for="weight">Input Weight</label>
+        <input type="number" id="weight">
+    </form>
+    <br>
+    <button onclick="check()">Check BMI</button>
+    <p id="result"></p>
+    <script>
+        function check() {
+        let height = document.getElementById('height').value;
+        let weight = document.getElementById('weight').value;
+        let bmi = weight / (height ** 2);
+        let result;
+        if (bmi < 18.5) {
+            result = 'Underweight'
+        } 
+        else if (bmi < 25) {
+            result ='Normal'
+        }
+        else if (bmi < 30) {
+            result = 'Overweight'
+        }
+        else {
+            result='Obese'
+        }
+        document.getElementById('result').innerHTML = (`Your BMI is: ${bmi.toFixed(2)} . ${result}`)
+    }
+    </script>
+
+</body>
+</html>
