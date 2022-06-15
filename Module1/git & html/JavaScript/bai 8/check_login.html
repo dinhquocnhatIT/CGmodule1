@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked Login</title>
+</head>
+<body>
+    <script>
+        let userName = prompt("Ai day?");
+        if(userName == 'Nhat') {
+            let passWord = prompt("Password?");
+            if ( passWord == 'nhatdeptrai'){
+                alert('Chao anh Nhat dep trai vkl top 1 the gioi');
+            } else if (passWord == null) {
+                alert('khong thuc hien duoc');
+            } else alert('sai mat khau')
+                
+        } else if (userName == null) {
+            alert('khong thuc hien duoc');
+        } else alert('em khong biet anh la ai');
+    </script>
+</body>
+</html>
