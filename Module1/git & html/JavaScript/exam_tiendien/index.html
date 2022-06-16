@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tinh tien dien</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<div id="container">
+    <table id="table1">
+      <tr>
+        <td>
+          <label for="total_power">Tổng điện năng tiêu thụ (kWh)</label>
+        </td>
+        <td>
+          <input type="number" id="total_power" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button class="btn" onclick="payPower()">Thanh toán</button>
+          <button class="btn" onclick="cancel()">Hủy</button>
+        </td>
+      </tr>
+    </table>
+    <span>Kết quả</span>
+    <table id="table2" >
+      <tr>
+        <td ></td>
+        <td>ĐƠN GIÁ THEO QĐ 648/QĐ-BCT (đồng/kWh)</td>
+        <td>SẢN LƯỢNG (kWh)</td>
+        <td>THÀNH TIỀN (đồng)</td>
+      </tr>
+      <tr>
+        <td><p id="level" class="display"></p></td>
+        <td><p id="unit_price" class="display"></p></td>
+        <td><p id="quantity" class="display"></p></td>
+        <td><p id="into_money" class="display"></p></td>
+      </tr>
+    </table>
+    <table id="table3">
+        <tr>
+            <td>Tiền điện chưa thuế</td>
+            <td><p id="gross"></p></td>
+        </tr>
+        <tr>
+            <td>Thuế GTGT (10%) tiền điện</td>
+            <td> <p id="tax"></p></td>
+        </tr>
+        <tr>
+            <td>Tổng cộng tiền thanh toán (đồng)</td>
+            <td><p id="net"></p></td>
+        </tr>
+    </table>
+</div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
