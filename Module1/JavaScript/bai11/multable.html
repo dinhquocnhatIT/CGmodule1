@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplication table</title>
+</head>
+<body>
+    <script>
+        let mulTable = "<table border='1' width='850' cellspacing='0' cellpadding='15'>"
+            for(let row = 1; row <=10; row ++){
+            mulTable +='<tr>'
+                for(let cell = 2; cell < 10; cell++)
+            {
+                mulTable = `${mulTable} <td> ${cell} x ${row} = ${cell*row} </td>`
+            }
+        mulTable += '</tr>'
+    }
+        mulTable+= '</table>'
+        document.write(mulTable);
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="doanso()">start</button>
+    <script>
+        // bai 1 dem tu 1 - 100
+        // for(let i = 1; i <= 100; i ++) {
+        //     if(i == 99) {
+        //         alert(' hop thoai ket thuc')
+        //         break;
+        //     }
+        //     console.log(i)
+        // }
+        // bai 2 nhap vao nhiet do
+        // let temp = Number(prompt('Nhap vao nhiet do: '))
+        // for(;20<= temp <= 100;) {
+        //     if(temp > 100) {
+        //         alert('giam nhiet do')
+        //         break;
+        //     }
+        //     if (temp < 20) {
+        //         alert('tang nhiet do')
+        //         break;
+        //     }
+        //     if (20 <= temp <= 100){
+        //         temp = Number(prompt('Nhap vao nhiet do: '))
+        //     }
+        // }
+        //  bai 3 hien thi 20 so dau trong dY FIBONACI
+        // const number = 20;
+        // let n1 = 0;
+        // let n2 = 1;
+        // let nextTerm;
+        // for(let i = 1; i <= number; i++) {
+        //     console.log(n1);
+        //     nextTerm = n1 + n2;
+        //     n1 = n2;
+        //     n2 = nextTerm;
+        //    }
+        // bai 4 so chia het cho 5 trong day bionaci
+        // const number = Number(prompt('Nhap vao 1 so'))
+        // let n1 = 0;
+        // let n2 = 1;
+        // let nextTerm;
+        // for(let i = 1; i <= number; i++) {
+           
+        //     nextTerm = n1 + n2;
+        //     n1 = n2;
+        //     n2 = nextTerm;
+        //     if (n1 % 5 == 0){
+        //         console.log(`day la so dau tirn chia het cho 5: ${n1}`)
+        //         break;
+        //     }
+        //     console.log(n1)
+        //    }
+        // ================= bai 5 tinh tong 20 so dau cua day so
+        //    const number = 20;
+        // let n1 = 0;
+        // let n2 = 1;
+        // let nextTerm;
+        // let sum = 1;
+        // document.writeln(n1)
+        // document.writeln(n2)
+        // for(let i = 2; i <= number; i++) {
+        //     nextTerm = n1 + n2;
+        //     n1 = n2;
+        //     n2 = nextTerm;
+        //     document.writeln(nextTerm)
+        //     sum += nextTerm
+        //    }
+        //    document.writeln('<br>')
+        //     document.writeln(sum)
+    //    ========================= bai 6 tinh tong 30 so dau chia het cho 7
+    //  const number = 30;
+    //  let count = 0
+    //  let sum = 0;
+    // //  let count = 0;
+    //  for(let i = 1; count < number;i++ ) {
+    //     if(i % 7 == 0) {
+    //         count += 1
+    //         sum += i
+    //         document.write(`${i} `)
+    //     }
+
+    //  }
+    //  document.write('<br>')
+    //  document.write(sum)
+    // =====================bai 7
+    // for ( let i = 1; i <= 100; i++) {
+    //     if(i % 3 == 0) {
+    //         console.log('Fizz')
+    //     }
+    //      else if(i % 5 == 0) {
+    //         console.log('Buzz')
+    //     }
+    //      else if(i % 3 == 0 && i % 5 == 0) {
+    //         console.log('FizzBuzz')
+    //     }
+    //     else {console.log(i)}
+    // }
+    // ========================bai 8
+    function doanso() {
+            debugger;
+            let number = +prompt("Số bạn muốn đoán trong khoảng lớn nhất là bao nhiêu?")
+            let number_ran = Math.floor(Math.random() * number);
+            console.log(number_ran);
+            let number_check = +prompt ("Nhập số bạn đoán");
+            let count = 0;
+            while (number_check !== number_ran) {
+                count++;
+                if (count == 4) {
+                    alert("Bạn hết số lần đoán")
+                    break;
+                } else if (number_check < number_ran) {
+                    alert("Số bạn đoán bé hơn");
+                } else {
+                    alert ("Số bạn đoán lớn hơn")
+                }
+                number_check = prompt ("Nhập số bạn đoán");   
+            }
+            if (count == 4) {
+                document.write("Bạn hết số lần đoán")
+            } else {
+                document.write("Bạn đã đoán đúng số. Chúc mừng bạn!")
+            } 
+        } 
+       
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Array</title>
+    <style>
+        table, tr, td {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    // Viết chương trình tạo ra 1 mảng 2 chiều có số dòng là row, số ô trên mỗi dòng là cell
+// mảng 2 chiều này được tạo ra bằng cách sinh các số ngẫu nhiên trong khoảng [min, max]
+// các giá trị row, cell, min, max được người dùng nhập vào từ bàn phím
+// yêu cầu:
+// 1. Hiển thị mảng 2 chiều trên
+// 2. Đến xem trong mảng 2 chiều trên có bao nhiêu số chẵn
+// 3. Đếm xem trong mảng 2 chiều trên có bao nhiêu số nguyên tố
+// 4. Tính tổng các giá trị trên đường biên.
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Row</td>
+            <td>
+                <input type="number" id="row" >
+            </td>
+        </tr>
+        <tr>
+            <td>Cell</td>
+            <td>
+                <input type="number" id="cell" >
+            </td>
+        </tr>
+        <tr>
+            <td>Min</td>
+            <td>
+                <input type="number" id="min" value="10">
+            </td>
+        </tr>
+        <tr>
+            <td>Max</td>
+            <td>
+                <input type="number" id="max" value="50">
+            </td>
+        </tr>
+        <tr>
+            <td>Mảng</td>
+            <td>
+                <table border="1">
+                    <tbody>
+                        <tr id="trArray" style="padding: 30px;">
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Đếm các số chẵn</td>
+            <td id="evenNumber"></td>
+        </tr>
+        <tr>
+            <td>Số lượng số nguyên tố</td>
+            <td id="countOfPrime"></td>
+        </tr>
+        <tr>
+            <td>Tổng các giá trị trên đường biên</td>
+            <td id="totalMargin"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="process()">Process</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script src="2dArray.js"></script>
+
+</body>
+</html>

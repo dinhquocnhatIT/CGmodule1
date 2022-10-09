@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Prime</title>
+  </head>
+  <body>
+    <script>
+    
+      function isPrime(number) {
+        if (number > 1 && Number.isInteger(number)) {
+          for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+              return false;
+            }
+            
+          }
+          return true;
+        }else{
+            return false
+        }
+      }
+      
+
+    //   console.log(isPrime(1.4))
+      let arr = [1,6,7,8,9,5,1]
+      for(let i = 0; i < arr.length - 1; i++) {
+        let check = isPrime(arr[i])
+        if(check) {
+            console.log(arr[i])
+        }
+      }
+    </script>
+  </body>
+</html>

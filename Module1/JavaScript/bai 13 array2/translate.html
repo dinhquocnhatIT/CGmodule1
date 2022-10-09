@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+  </head>
+  <body>
+    <span>Enter word:</span>
+    <input type="text" id="english"/>
+    <button onclick="transLate()">Translate</button>
+    <p id="result"></p>
+    <br />
+
+    <script>
+        function transLate() {
+      let english = ['car', 'food', 'fish', 'dog', 'cat', 'flower', 'bird', 'pretty'];
+      let vietnamese = ['xe hơi', 'đồ ăn', 'con cá', 'con chó', 'con mèo', 'bong hoa', 'con chim', 'đẹp'];
+      let string = document.getElementById('english').value;
+      let indexEng = 0;
+      let result ='';
+      for(let i = 0; i < english.length; i++) {
+        if(string == english[i]) {
+            indexEng = i;
+            for(let j = 0; j < vietnamese.length; j++ ) {
+                if(indexEng == j) {
+                    result = vietnamese[j]
+                }
+            }
+
+        }
+      }
+      document.getElementById('result').innerHTML = result;
+    }
+    </script>
+  </body>
+</html>
